@@ -1,0 +1,10 @@
+path --- /var/lib/tomcat8/conf
+
+sudo vi tomcat-users/xml
+
+<role rolename="manager-gui"/>
+	<role rolename="admin-gui"/>
+	<role rolename="manager-script"/>
+	<role rolename="manager-jmx"/>
+	<role rolename="tomcat" password="tomcat" roles="manager-gui,admin-gui,manager-script,manager-jmx"/>
+</tomcat-users>
